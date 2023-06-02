@@ -19,10 +19,10 @@
 name: Snyk Security
 
 on:
-  workflow_call: 
-    secrets: 
-      SNYK_TOKEN:
-        required: true
+  push:
+    branches: ["main" ]
+  pull_request:
+    branches: ["main"]
 
 permissions:
   contents: read
